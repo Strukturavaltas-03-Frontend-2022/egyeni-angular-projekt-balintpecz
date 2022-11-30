@@ -1,1 +1,2 @@
-#
+# Pár szó az alkalmazásról
+Egy olyan alkalmazást készítettem, aminek segítségével egy cég munkavállalóit lehet nyilvántartani. Az alkalmazottak adatai módosíthatóak tetszés szerint, az elbocsátott alkalmazottakat lehetőség van törölni, új belépő esetén pedig új alkalmazottak felvételére is lehetőség van az alkalmazáson keresztül. Az oldal elkészítéséhez CRUD műveleteket használtam Angular keretrendszer segítségével, a dizájnt pedig Bootstrappel valósítottam meg. 
