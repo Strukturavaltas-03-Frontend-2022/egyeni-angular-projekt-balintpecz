@@ -575,18 +575,6 @@
       "salary": 50,
       "profile": "Profile-49.jpg",
       "id": 49
-    },
-    {
-      "firstname": "Rohit",
-      "lastname": "Sharma",
-      "birthdate": "2022-01-12",
-      "gender": "m",
-      "education": "post graduate",
-      "company": "Google",
-      "jobExperience": 20,
-      "salary": 50,
-      "profile": "Profile-50.jpg",
-      "id": 50
     }
   ],
   "comments": [],

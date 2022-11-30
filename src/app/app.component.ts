@@ -18,10 +18,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   employees: Employee[];
   employeesToDisplay: Employee[];
   educationOptions = [
-    '10th pass',
-    'diploma',
-    'graduate',
-    'post graduate',
+    'érettségi',
+    'felsőfokú szakképesítés',
+    'főiskolai diploma',
+    'egyetemi diploma',
     'PhD',
   ];
 

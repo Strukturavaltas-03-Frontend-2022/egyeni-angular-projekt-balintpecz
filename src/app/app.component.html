@@ -8,11 +8,11 @@
 
       <div class="add-employee">
         <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal"
-          data-bs-target="#exampleModal" #addEmployeeButton>Add Employee</button>
+          data-bs-target="#exampleModal" #addEmployeeButton>Alkalmazott hozzáadása</button>
       </div>
 
       <div class="search-employees">
-        <input type="search" class="form-control" placeholder="Search Employees"
+        <input type="search" class="form-control" placeholder="Alkalmazott kereső"
           (input)="searchEmployees(searchInput.value)" #searchInput>
       </div>
 
@@ -22,7 +22,7 @@
 
       <div class="row mt-5" *ngIf="employees.length == 0">
         <div class="col text-center">
-          <span class="text-secondary fs-2 fw-bold fst-italic">There are No Employees Added!</span>
+          <span class="text-secondary fs-2 fw-bold fst-italic">Nincs hozzáadva!</span>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Enter Employee Information</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Alkalmazott információk</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
@@ -50,27 +50,27 @@
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="First Name" formControlName="firstname">
+              <input type="text" class="form-control" placeholder="Keresztnév" formControlName="firstname">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Last Name" formControlName="lastname">
+              <input type="text" class="form-control" placeholder="Vezetéknév" formControlName="lastname">
             </div>
           </div>
 
           <div class="row mt-5">
             <div class="col form-heading">
-              <h6 class="text-secondary fst-italic">Personal Information</h6>
+              <h6 class="text-secondary fst-italic">Személyes Információk</h6>
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              <label for="datepicker" class="form-label">Birthdate</label>
+              <label for="datepicker" class="form-label">Születésnap</label>
               <input type="date" class="form-control" id="datepicker" formControlName="birthday">
             </div>
             <div class="col">
               <div class="row">
-                <h6 class="text-secondary">Gender</h6>
+                <h6 class="text-secondary">Nem</h6>
               </div>
 
               <div class="row">
@@ -78,12 +78,12 @@
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="gender" id="male" value="m"
                       formControlName="gender">
-                    <label class="form-check-label" for="male">Male</label>
+                    <label class="form-check-label" for="male">Féri</label>
                   </div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="gender" id="female" value="f"
                       formControlName="gender">
-                    <label class="form-check-label" for="female">Female</label>
+                    <label class="form-check-label" for="female">Nő</label>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
           <div class="row mt-3">
             <div class="col">
               <select class="form-select" formControlName="education">
-                <option value="default" selected>Select your Education</option>
+                <option value="default" selected>Tanulmány</option>
                 <option *ngFor="let option of educationOptions; let i = index;" value="{{i}}">
                   {{option | titlecase}}
                 </option>
@@ -103,30 +103,30 @@
 
           <div class="row mt-3">
             <div class="col">
-              <label for="profile" class="form-label">Profile Image</label>
+              <label for="profile" class="form-label">Profilkép</label>
               <input type="file" class="form-control" id="profile" #fileInput>
             </div>
           </div>
 
           <div class="row mt-5">
             <div class="col form-heading">
-              <h6 class="text-secondary fst-italic">Job Information</h6>
+              <h6 class="text-secondary fst-italic">Munka információ</h6>
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Company Name" formControlName="company">
+              <input type="text" class="form-control" placeholder="Cégnév" formControlName="company">
             </div>
           </div>
 
           <div class="row mt-3">
             <div class="col">
-              <input type="number" class="form-control" placeholder="Job Experience (yrs)"
+              <input type="number" class="form-control" placeholder="Tapasztalat (év)"
                 formControlName="jobExperience">
             </div>
             <div class="col">
-              <input type="number" class="form-control" placeholder="Salary (LPA)" formControlName="salary">
+              <input type="number" class="form-control" placeholder="Fizetés" formControlName="salary">
             </div>
           </div>
         </form>
